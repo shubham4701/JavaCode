@@ -1,9 +1,13 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Scanner;
 
 public class NumberOfTimesDigitProdcutIsBiggerThan10 {
-    static int counter = 0;
-    static int prev_counter = 0;
-    public static int persistence(long n) {
+
+    static private int counter = 0;
+    static private int prev_counter = 0;
+
+    private static int persistence(long n) {
         // your code
         if(n >= 10) {
             n = multiplyDigits(n);
@@ -27,7 +31,7 @@ public class NumberOfTimesDigitProdcutIsBiggerThan10 {
     }
 
     public static void main(String[] args) {
-        String text = "";
+        String text;
         System.out.println("********** Count Number of times Product of digits is more than 10 recursively **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {

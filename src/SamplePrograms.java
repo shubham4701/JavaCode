@@ -6,14 +6,14 @@ import java.util.function.Function;
 class SamplePrograms {
 
     public static void main(String[] args) {
-        System.out.println(zeros(5));
+        System.out.println(zeros(10));
     }
 
     public static int zeros(int n) {
         // your beatiful code here
         int counter = 0;
         BigInteger factorial = factorial(n);
-        while(factorial.mod(BigInteger.TEN).intValue() == 0) {
+        while(factorial.mod(BigInteger.TEN).equals(BigInteger.ZERO)) {
             counter++;
             factorial = factorial.divide(BigInteger.TEN);
         }

@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Scanner;
 
 public class NumberDivisibleBySum {
@@ -15,7 +17,7 @@ public class NumberDivisibleBySum {
         return sum;
     }
     public static void main(String[] args) {
-        String text = "";
+        String text;
         System.out.println("********** Number divisible by Sum **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {

@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -16,17 +18,17 @@ public class DirectionReducer {
             System.out.print(d + ", ");
         }
     }
-    public static String[] dirReduc(String[] arr) {
+    private static String[] dirReduc(String[] arr) {
         // Your code here.
         ArrayList<String> list = new ArrayList<>(Arrays.asList(arr));
         boolean flag = false;
-        for (int i = 0; i < arr.length; i++) {
+        for (String anArr : arr) {
             for (int j = 0; j < list.size(); j++) {
-                if(flag) {
+                if (flag) {
                     flag = false;
                     j = 0;
                 }
-                if ((j+1) < list.size() && (decode(list.get(j)) + decode(list.get(j+1))) == 0) {
+                if ((j + 1) < list.size() && (decode(list.get(j)) + decode(list.get(j + 1))) == 0) {
                     list.remove(j);
                     list.remove(j);
                     flag = true;

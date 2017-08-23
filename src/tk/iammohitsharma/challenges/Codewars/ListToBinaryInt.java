@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +17,7 @@ public class ListToBinaryInt {
 
     public static void main(String[] args) {
         Integer[] array = {0, 0, 0, 0};
-        String text = "";
+        String text;
         System.out.println("********** Binary To Integer **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {

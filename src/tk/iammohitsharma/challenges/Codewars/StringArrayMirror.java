@@ -1,18 +1,18 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Arrays;
 import java.util.function.Function;
 
 public class StringArrayMirror {
 
-    public static String vertMirror(String strng) {
+    private static String vertMirror(String strng) {
         // your code
         StringBuilder final_string = new StringBuilder();
-        Arrays.stream(strng.split("\n")).forEach(a -> {
-            final_string.append(new StringBuilder(a).reverse() + "\n");
-        });
+        Arrays.stream(strng.split("\n")).forEach(a -> final_string.append(new StringBuilder(a).reverse().append("\n")));
         return final_string.delete(final_string.length() - 2, final_string.length()).toString();
     }
 
-    public static String horMirror(String strng) {
+    private static String horMirror(String strng) {
         // your code
         String temp;
         StringBuilder final_string = new StringBuilder();
@@ -28,7 +28,7 @@ public class StringArrayMirror {
         return final_string.toString();
     }
 
-    public static String oper(Function<String, String> operator, String s) {
+    private static String oper(Function<String, String> operator, String s) {
         // your code and complete ... before operator
         return operator.apply(s);
     }

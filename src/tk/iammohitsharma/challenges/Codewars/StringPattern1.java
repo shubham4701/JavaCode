@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Scanner;
 
 public class StringPattern1 {
@@ -14,7 +16,7 @@ public class StringPattern1 {
     }
 
     public static void main(String[] args) {
-        String text = "";
+        String text;
         System.out.println("********** String Pattern 1 **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {

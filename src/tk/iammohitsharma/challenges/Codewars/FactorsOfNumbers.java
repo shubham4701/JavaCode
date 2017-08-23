@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -5,7 +7,7 @@ import java.util.Scanner;
 public class FactorsOfNumbers {
 
     public static void main(String[] args) {
-        String text = "";
+        String text;
         System.out.println("********** Count Factors Of A Number **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
@@ -43,9 +45,7 @@ public class FactorsOfNumbers {
                 hash_list.put(a, 1);
             }
         });
-        hash_list.keySet().stream().sorted().forEach(a -> {
-            final_string.append("(" + a + ((hash_list.get(a) == 1) ? "" : "**" + hash_list.get(a)) + ")");
-        });
+        hash_list.keySet().stream().sorted().forEach(a -> final_string.append("(" + a + ((hash_list.get(a) == 1) ? "" : "**" + hash_list.get(a)) + ")"));
         return (final_string.toString());
     }
 }

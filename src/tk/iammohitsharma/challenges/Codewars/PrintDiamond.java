@@ -1,8 +1,10 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Scanner;
 
 public class PrintDiamond {
     public static void main(String[] args) {
-        String text= "1";
+        String text;
         System.out.println("********** Print Diamonds **********");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
@@ -23,7 +25,7 @@ public class PrintDiamond {
         }
     }
     private static String printDiamond(int n) {
-        StringBuffer string = new StringBuffer();
+        StringBuilder string = new StringBuilder();
         for(int i = 0; i < n; i += 2) {
             for(int j = 0; j < (n-i)/2; j++) {
                 string.append(" ");

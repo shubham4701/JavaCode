@@ -1,16 +1,20 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class TribonacciSeries {
 
-    static double[] startSeries;
-    static int n;
+    static private double[] startSeries;
+    static private int n;
 
     public static void main(String[] args) {
         System.out.println("********** Tribonacci Series **********");
         System.out.println("\nA Tribonacci Series is that in which the next term is the sum of previous 3 elements!");
         try(Scanner scanner = new Scanner(System.in)) {
-            while(printInstrutions(scanner)){}
+            while(printInstrutions(scanner)){
+                //
+            }
         }  catch (NumberFormatException e) {
             System.out.print("Please enter a valid number!");
         }
@@ -33,11 +37,13 @@ public class TribonacciSeries {
             System.out.print(a + ", ");
         });
         System.out.print("\nContinue? (Y/N) : ");
-        if(scanner.next().equalsIgnoreCase("N")) return false;
+        if (!scanner.next().equalsIgnoreCase("N")) {
+            return true;
+        }
+        return false;
 
-        return true;
     }
-    public static double[] tribonacci(double[] s, int n) {
+    private static double[] tribonacci(double[] s, int n) {
         // hackonacci me
         double[] solution;
         solution = new double[n];
@@ -45,14 +51,10 @@ public class TribonacciSeries {
             return new double[]{};
         } else if (n > 0 && n < 3) {
             solution = new double[n];
-            for (int i = 0; i < n; i++) {
-                solution[i] = s[i];
-            }
+            System.arraycopy(s, 0, solution, 0, n);
             return solution;
         } else {
-            for (int i = 0; i < s.length; i++) {
-                solution[i] = s[i];
-            }
+            System.arraycopy(s, 0, solution, 0, s.length);
             if (n < s.length) {
                 return solution;
             } else {

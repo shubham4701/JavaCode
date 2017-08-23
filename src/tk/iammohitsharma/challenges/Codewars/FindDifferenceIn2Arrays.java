@@ -1,3 +1,5 @@
+package tk.iammohitsharma.challenges.Codewars;
+
 public class FindDifferenceIn2Arrays {
     private static void callFindDifference() {
         String[] a1 = new String[]{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"};
