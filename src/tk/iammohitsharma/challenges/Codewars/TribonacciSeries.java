@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class TribonacciSeries {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/556deca17c58da83c00002db
     static private double[] startSeries;
     static private int n;
 
@@ -37,10 +38,7 @@ public class TribonacciSeries {
             System.out.print(a + ", ");
         });
         System.out.print("\nContinue? (Y/N) : ");
-        if (!scanner.next().equalsIgnoreCase("N")) {
-            return true;
-        }
-        return false;
+        return !scanner.next().equalsIgnoreCase("N");
 
     }
     private static double[] tribonacci(double[] s, int n) {

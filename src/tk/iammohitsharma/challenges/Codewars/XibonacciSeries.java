@@ -1,12 +1,12 @@
 package tk.iammohitsharma.challenges.Codewars;
 
-import javax.swing.text.html.StyleSheet;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class XibonacciSeries {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/556e0fccc392c527f20000c5
     static private double[] startSeries;
     static private int n;
 

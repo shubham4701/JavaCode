@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EncodeResistance {
+    //Problem Statement
+    //https://www.codewars.com/kata/5855777bb45c01bada0002ac
     private static String decode(int v) {
         switch (v) {
             case 0:

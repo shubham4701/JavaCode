@@ -1,10 +1,10 @@
 package tk.iammohitsharma.challenges.Codewars;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.math.BigInteger;
 
 public class SquareParameterWithFibonacciSides {
+    //Problem Statement
+    //https://www.codewars.com/kata/559a28007caad2ac4e000083
     private static BigInteger calculateSideSum(BigInteger sides) {
         BigInteger i = BigInteger.ZERO, j = BigInteger.ONE, sum = BigInteger.ONE, temp;
         for (int k = 1; k <= sides.intValue(); k++) {

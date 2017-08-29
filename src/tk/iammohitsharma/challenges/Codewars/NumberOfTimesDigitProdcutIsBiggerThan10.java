@@ -3,7 +3,8 @@ package tk.iammohitsharma.challenges.Codewars;
 import java.util.Scanner;
 
 public class NumberOfTimesDigitProdcutIsBiggerThan10 {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
     static private int counter = 0;
     static private int prev_counter = 0;
 

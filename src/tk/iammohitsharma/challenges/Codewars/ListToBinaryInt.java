@@ -2,15 +2,16 @@ package tk.iammohitsharma.challenges.Codewars;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class ListToBinaryInt {
+    //Problem Statement
+    //https://www.codewars.com/kata/578553c3a1b8d5c40300037c
     private static int listTOBinaryInt(Integer[] array) {
         String listString = new ArrayList<>(Arrays.asList(array))
-                            .stream().map(Object::toString)
-                            .collect(Collectors.joining(", ")).replace(", ", "");
+                .stream().map(Object::toString)
+                .collect(Collectors.joining(", ")).replace(", ", "");
         System.out.println(listString);
         return Integer.parseInt(listString, 2);
     }

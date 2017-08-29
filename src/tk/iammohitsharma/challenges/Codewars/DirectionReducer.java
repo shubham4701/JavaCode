@@ -2,9 +2,10 @@ package tk.iammohitsharma.challenges.Codewars;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class DirectionReducer {
+    //Problem Statement
+    //https://www.codewars.com/kata/550f22f4d758534c1100025a
     public static void main(String[] args) {
         String[] directions = {"NORTH", "EAST", "WEST", "SOUTH", "WEST"};
         System.out.println("********** Reduce the Given Directions for effective shortest path **********");

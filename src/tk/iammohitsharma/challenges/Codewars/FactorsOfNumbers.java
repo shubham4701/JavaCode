@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class FactorsOfNumbers {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/54d512e62a5e54c96200019e
     public static void main(String[] args) {
         String text;
         System.out.println("********** Count Factors Of A Number **********");

@@ -3,6 +3,8 @@ package tk.iammohitsharma.challenges.Codewars;
 import java.util.Scanner;
 
 public class PrintDiamond {
+    //Problem Statement
+    //https://www.codewars.com/kata/5503013e34137eeeaa001648
     public static void main(String[] args) {
         String text;
         System.out.println("********** Print Diamonds **********");

@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.function.Function;
 
 public class StringArrayMirror {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/56dbe0e313c2f63be4000b25
     private static String vertMirror(String strng) {
         // your code
         StringBuilder final_string = new StringBuilder();

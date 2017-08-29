@@ -2,8 +2,11 @@ package tk.iammohitsharma.challenges.Codewars;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class FindCommonStringsIn2Arrays {
+    //Problem Statement
+    //https://www.codewars.com/kata/550554fd08b86f84fe000a58
     private static String[] stringCommon() {
         String array1[] = new String[]{ "arp", "live", "strong" };
         String array2[] = new String[] { "lively", "alive", "harp", "sharp", "armstrong" };
@@ -16,6 +19,7 @@ public class FindCommonStringsIn2Arrays {
                 }
             }
         }
+        Collections.sort(list);
         return list.toArray(new String[list.size()]);
     }
 

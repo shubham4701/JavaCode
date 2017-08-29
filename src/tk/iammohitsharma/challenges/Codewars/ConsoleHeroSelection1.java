@@ -5,8 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ConsoleHeroSelection1 {
+    //Problem Statement
+    //https://www.codewars.com/kata/5853213063adbd1b9b0000be
     private static String[][] fighters = new String[][]{{"Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"},
-                                                    {"Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"}};
+            {"Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"}};
     private static String[] moves = {"up", "left", "right", "left", "left"};
 
     private static int[] directions(String direction, int x, int y, int xmax, int ymax){

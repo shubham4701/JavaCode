@@ -1,11 +1,11 @@
 package tk.iammohitsharma.challenges.Codewars;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class CountDuplicatesInString {
-
+    //Problem Statement
+    //https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
     private static int duplicateCount(String text) {
         // Write your code here
         int count = 0;

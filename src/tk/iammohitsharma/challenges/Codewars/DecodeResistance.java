@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DecodeResistance {
+    //Problem Statement
+    //https://www.codewars.com/kata/57cf3dad05c186ba22000348
     private static String decodeResistance(String[] array) {
         Arrays.stream(array).forEach(System.out::println);
         double val = ((encode(array[0]) * 10) + encode(array[1])) * (int) Math.pow(10, encode(array[2]));

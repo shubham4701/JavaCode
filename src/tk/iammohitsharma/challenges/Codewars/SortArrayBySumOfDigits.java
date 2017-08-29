@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import static java.util.Collections.*;
-
 public class SortArrayBySumOfDigits implements Comparator {
+    //Problem STatement
+    //https://www.codewars.com/kata/55c6126177c9441a570000cc
     private static int sumOfDigits(String number) {
         try{
             Long num = Long.parseLong(number);

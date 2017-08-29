@@ -3,6 +3,8 @@ package tk.iammohitsharma.challenges.Codewars;
 import java.util.Scanner;
 
 public class StringPattern1 {
+    //Problem Statement
+    //https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
     private static String stringManipulate(String data) {
         StringBuilder final_string = new StringBuilder();
         int length = data.length();

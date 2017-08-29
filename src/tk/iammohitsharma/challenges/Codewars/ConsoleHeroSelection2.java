@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ConsoleHeroSelection2 {
+    //Problem Statement
+    //https://www.codewars.com/kata/58583922c1d5b415b00000ff
     static private String[][] fighters = new String[][]{{"","Ryu","E.Honda","Blanka","Guile",""},
             {"Balrog","Ken","ChunLi","Zangief","Dhalsim","Sagat"},
             {"Vega","T.Hawk","FeiLong","Deejay","Cammy","M.Bison"}};
