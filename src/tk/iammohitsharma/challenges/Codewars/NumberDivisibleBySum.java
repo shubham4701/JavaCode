@@ -16,6 +16,7 @@ public class NumberDivisibleBySum {
         }
         return sum;
     }
+
     public static void main(String[] args) {
         String text;
         System.out.println("********** Number divisible by Sum **********");
